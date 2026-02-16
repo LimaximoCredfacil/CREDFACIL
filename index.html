@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credfácil | Crédito com Segurança e Agilidade</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+--rosa:#C2185B;
+--rosa-claro:#F8E6EC;
+--dourado:#C6A75E;
+--branco:#ffffff;
+--cinza:#555;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#fafafa;
+color:#333;
+}
+
+header{
+background:var(--branco);
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.05);
+position:fixed;
+width:100%;
+z-index:1000;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:28px;
+color:var(--rosa);
+font-weight:700;
+}
+
+.btn-whats{
+background:linear-gradient(45deg,var(--rosa),var(--dourado));
+color:white;
+padding:12px 25px;
+border-radius:40px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn-whats:hover{
+opacity:0.9;
+}
+
+.hero{
+padding:150px 8% 80px;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
+background:var(--rosa-claro);
+}
+
+.hero-text{
+flex:1;
+min-width:300px;
+}
+
+.hero-text h1{
+font-family:'Playfair Display',serif;
+font-size:42px;
+color:var(--rosa);
+margin-bottom:20px;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:30px;
+}
+
+.hero-img{
+flex:1;
+text-align:center;
+}
+
+.hero-img img{
+width:320px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+}
+
+section{
+padding:70px 8%;
+}
+
+.titulo{
+font-family:'Playfair Display',serif;
+font-size:32px;
+color:var(--rosa);
+margin-bottom:30px;
+text-align:center;
+}
+
+form{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.08);
+max-width:600px;
+margin:0 auto;
+}
+
+input,select{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border-radius:10px;
+border:1px solid #ddd;
+}
+
+button{
+width:100%;
+padding:15px;
+background:linear-gradient(45deg,var(--rosa),var(--dourado));
+border:none;
+color:white;
+font-weight:600;
+border-radius:40px;
+cursor:pointer;
+}
+
+.depoimentos{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+max-width:300px;
+}
+
+.estrelas{
+color:#FFD700;
+margin-bottom:10px;
+}
+
+.calculadora{
+max-width:500px;
+margin:0 auto;
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+text-align:center;
+}
+
+footer{
+background:#111;
+color:#aaa;
+padding:30px;
+text-align:center;
+font-size:13px;
+}
+
+@media(max-width:768px){
+.hero{flex-direction:column;text-align:center;}
+.hero-text h1{font-size:32px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">CREDFÁCIL</div>
+<a class="btn-whats" href="https://wa.me/5521972208880" target="_blank">
+Solicitar Simulação
+</a>
+</header>
+
+<section class="hero">
+<div class="hero-text">
+<h1>Crédito Rápido, Seguro e Personalizado</h1>
+<p><strong>Liliane A Figueiredo</strong><br>
+Consultora Financeira em Maricá - RJ<br>
+Correspondente Bancária Certificada</p>
+<a class="btn-whats" href="https://wa.me/5521972208880" target="_blank">
+Falar no WhatsApp
+</a>
+</div>
+
+<div class="hero-img">
+<img src="SUA-FOTO-AQUI.jpg" alt="Consultora Liliane">
+</div>
+</section>
+
+<section>
+<h2 class="titulo">Solicite sua Simulação</h2>
+
+<form action="https://wa.me/5521972208880" method="get" target="_blank">
+<input type="text" placeholder="Nome completo" required>
+<input type="text" placeholder="CPF" required>
+<input type="date" placeholder="Data de nascimento" required>
+<input type="text" placeholder="CEP" required>
+<input type="text" placeholder="Profissão" required>
+<button type="submit">Solicitar Simulação pelo WhatsApp</button>
+</form>
+</section>
+
+<section>
+<h2 class="titulo">Simulador de Crédito</h2>
+
+<div class="calculadora">
+<input type="number" id="valor" placeholder="Valor desejado">
+<input type="number" id="parcelas" placeholder="Quantidade de parcelas">
+<button onclick="simular()">Calcular</button>
+<p id="resultado" style="margin-top:20px;font-weight:bold;"></p>
+</div>
+</section>
+
+<section>
+<h2 class="titulo">Depoimentos</h2>
+
+<div class="depoimentos">
+
+<div class="card">
+<div class="estrelas">★★★★★</div>
+<p>Atendimento impecável! A Liliane foi super atenciosa e consegui meu crédito rapidamente.</p>
+<strong>Mariana S.</strong>
+</div>
+
+<div class="card">
+<div class="estrelas">★★★★★</div>
+<p>Processo rápido e transparente. Recomendo a Credfácil!</p>
+<strong>Patrícia R.</strong>
+</div>
+
+<div class="card">
+<div class="estrelas">★★★★★</div>
+<p>Me ajudou muito no momento que eu mais precisava.</p>
+<strong>Ana Paula M.</strong>
+</div>
+
+</div>
+</section>
+
+<footer>
+CREDFÁCIL - Correspondente Bancária Certificada<br>
+Certificação <strong>FEBRABAN</strong><br>
+CNPJ 49.777.117/0001-75<br>
+Maricá - Rio de Janeiro
+</footer>
+
+<script>
+function simular(){
+let valor = document.getElementById("valor").value;
+let parcelas = document.getElementById("parcelas").value;
+
+if(valor && parcelas){
+let juros = 0.02;
+let total = (valor * (1 + juros * parcelas));
+let parcela = total / parcelas;
+
+document.getElementById("resultado").innerHTML =
+"Parcela estimada: R$ " + parcela.toFixed(2);
+}
+}
+</script>
+
+</body>
+</html>
