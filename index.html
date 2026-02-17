@@ -7,12 +7,54 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
-:root{
---rosa:#C2185B;
---rosa-claro:#F8E6EC;
---dourado:#C6A75E;
---branco:#ffffff;
---cinza:#555;
+:root{body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F9FAF8;
+    color: #0E3B2E;
+}
+
+/* Títulos */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0E3B2E;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #0E3B2E, #1F5C45);
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Botão principal */
+.botao-whatsapp {
+    background: linear-gradient(45deg, #E67E22, #F4A261);
+    color: white;
+    padding: 15px 35px;
+    border-radius: 40px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+.botao-whatsapp:hover {
+    transform: translateY(-3px);
+    opacity: 0.9;
+}
+
+/* Cards */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    margin: 20px 0;
+}
 }
 
 *{margin:0;padding:0;box-sizing:border-box;}
